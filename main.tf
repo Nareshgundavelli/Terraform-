@@ -6,10 +6,12 @@ resource "aws_instance" "server" {
   ami                    = "ami-id"
   instance_type          = "t3.micro"
 
+    tags = {
+      name = "server"
+  }
+
+
 }
 
-tags = {
-  name = "server"
-}
 
   
