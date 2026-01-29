@@ -8,5 +8,8 @@ resource "aws_instance" "server" {
 
 }
 
+tags = {
+  name = "server"
+}
 
   
